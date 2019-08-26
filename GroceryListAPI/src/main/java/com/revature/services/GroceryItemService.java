@@ -1,4 +1,4 @@
-package com.revature.services;
+package src.main.java.com.revature.services;
 
 public class GroceryItemService {
 
