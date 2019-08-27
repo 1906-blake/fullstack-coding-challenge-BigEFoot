@@ -1,0 +1,30 @@
+package com.revature.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.revature.models.GroceryList;
+import com.revature.repos.GroceryListRepo;
+
+
+@Service
+public class GroceryListService {
+
+	@Autowired
+	private GroceryListRepo groceryListRepo;
+	
+	public List<GroceryList> findAll() {
+		// TODO Auto-generated method stub
+		return groceryListRepo.findAll();
+	}
+
+	public GroceryList save(GroceryList list) {
+		// TODO Auto-generated method stub
+		return groceryListRepo.save(list);
+	}
+	
+	
+	
+}

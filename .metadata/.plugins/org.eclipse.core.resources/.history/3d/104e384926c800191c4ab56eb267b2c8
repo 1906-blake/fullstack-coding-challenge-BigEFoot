@@ -1,0 +1,22 @@
+package com.revature.services;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.revature.models.GroceryList;
+
+
+@RestController
+@RequestMapping("grocery_list")
+public class GroceryListService {
+
+	public List<GroceryList> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+	
+}

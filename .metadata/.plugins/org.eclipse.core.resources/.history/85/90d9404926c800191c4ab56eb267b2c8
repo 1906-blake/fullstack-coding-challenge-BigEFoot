@@ -1,0 +1,20 @@
+package com.revature.controllers;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.revature.models.GroceryList;
+import com.revature.services.GroceryListService;
+
+public class GroceryListController {
+	@Autowired
+	private GroceryListService groceryListService;
+
+	@GetMapping
+	public List<GroceryList> findAll() {
+		return groceryListService.findAll();
+	}
+
+}

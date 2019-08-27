@@ -1,0 +1,20 @@
+Look: for an application.{other name here} If you right-click on it, 2nd to last thing on the list should say change to a .yaml
+application: ''
+database-platform: org.hibernate.dialect.PostgreSQLDialect
+datasource: ''
+ddl-auto: none
+default_schema: ${DB_SCHEMA:public}
+driverClassName: org.postgresql.Driver
+generate-ddl: false
+hibernate: ''
+initialization-mode: NEVER
+jpa: ''
+name: ''
+password: ${DB_PASSWORD}
+port: 8000
+properties: ''
+server: ''
+show-sql: 'false (edited) '
+spring: ''
+url: jdbc:postgresql://${DB_URL:localhost}:5432/${DB_NAME}
+username: ${DB_USERNAME:postgres}
